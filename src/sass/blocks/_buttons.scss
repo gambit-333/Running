@@ -1,0 +1,25 @@
+.button {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: $main-color; /* цвет мы уже задали как отдельную переменную в variable */
+    border: none; /* убираем границы у кнопки */
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;/*  Ставим текст в верхнем регистре */
+    &_main {
+        margin-top: 67px;
+        width: 300px;
+        height: 50px;
+        font-size: 16px;
+        text-align: center;
+        color: #fff;
+    }
+    &_submit {/* изменяем нашу кнопку из формы */
+        width: 100%; /* будет подстраиваться под форму  */
+        height: 55px;
+        font-size: 16px;
+    }
+}
