@@ -3,22 +3,22 @@
     &__inner {
         position: relative;
         width: 750px; /* Ширина нашей карусели */
-        margin: 0 auto;
+        margin: 0 auto; /* Устанавливаем по центру */
     }
-    .slick-prev, .slick-next  {
-        position: absolute;
+    .slick-prev, .slick-next  { /* берем классы из JS кнопок| пишется внутри карусели, потому что, чтобы стрелки стилизовались только внутри карусели*/
+        position: absolute; /* для того, чтобы кнопку свободно передвигать */
         top: 50%;
-        transform: translateY(-50%);
-        left: -66px;
-        border: none;
-        background-color: #fff;
-        img {
+        transform: translateY(-50%); /* сдвигаем по Y-ку на 50% */
+        left: -66px; /* сдвигаем нашу иконку влево от слайдера */
+        border: none; /* убираем кнопке границы */
+        background-color: #fff; /* Белый фон кнопке, в особенности для IE */
+        img {      /* указываем фиксированный размер наших стрелок */
             width: 31px;
             height: 50px;
         }
     }
     .slick-next  {
         right: -66px;
-        left: auto;
+        left: auto; /* чтобы лефт автоматически подставлялся */
     }
 }

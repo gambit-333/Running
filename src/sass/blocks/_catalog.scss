@@ -1,0 +1,42 @@
+.catalog {
+    padding-bottom: 100px;/*  так как верхний отсут нам не нужен из-за педдинга в прошлой секции, мы задаем паддинг только снизу */
+    &__tabs { /* Задаем внешнюю геометрию блока с нашими табами */
+        margin-top: 70px;
+        list-style-type: none;/*  убираем точки из-за лист айтема */
+        display: flex; 
+        justify-content: center; /* выравниваем по центру наши табы */
+        align-items: center;
+        margin-bottom: 0; /* убираем паддинги и марджины системы */
+        padding-left: 0;
+    }
+    &__tab { /* неактивный таб */
+        width: 220px;
+        height: 50px;
+        border: solid 2px #d0d0d0;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        color: #6b6b6b;
+        text-transform: uppercase;
+        line-height: 48px; /* лайн-хайт изменяю в 48 пикc, почти такой же, как и высоту, чтобы текст встал по центральной высоте */
+        transform: skewX(-25deg); /* поворачиваем по X наши прямоугольнички */
+        margin: 0 5px; /* отступы между табами */
+        cursor: pointer; /* При наведении на там, курсор меняется */
+        transition: 0.5s all; /* чтобы анимации были плавными */
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color; /* при наведение на ТАБ будет добавляться модификатор - смещение по Х, смещение по Y, размытие тени, цвет */
+            border: none; /* при наведении на элемент убираем бордер */
+        }
+        div {
+            transform: skewX(25deg)
+        }
+        &_active { /* создаем параметры для "активного" элемента */
+            color: #fff;
+            background-color: $main-color;
+            border:  none;
+        }
+    }
+    &__content {
+        margin-top: 60px; 
+    }
+}

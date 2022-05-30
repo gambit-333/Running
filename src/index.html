@@ -105,9 +105,41 @@
                     <img src="img/watch2.jpg" alt="slide">
                 </div>
                 <div>
-                    <img src="img/watch2.jpg" alt="slide">
+                    <img src="img/watch3.jpg" alt="slide">
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="catalog">
+        <div class="container">
+            <h2 class="title">Каталог пульсометров</h2>
+            <ul class="catalog__tabs">
+                <li class="catalog__tab catalog__tab_active"><div>Для фитнеса</div></li> <!-- создаем ul с классом catalog__tabs   в котором будет 3 li - лист айтема с классом catalog__tab --- ul.catalog__tabs>li.catalog__tab*3 -->
+                <li class="catalog__tab"><div>для бега</div></li> <!-- так как в дльнейшем мы будем наклонять наши прямоугольнички, текст тоже наклонится -->
+                <li class="catalog__tab"><div>для триатлона</div></li> <!-- поэтому помещаем наш текст в div, чтобы трансформировать его обратно -->
+            </ul>
+            <div class="catalog__contant"> <!-- урок 53 - 16 мин - для ниже -->
+                <div class="catolog-item"> <!-- каждый элемент, который будет создаваться -->
+                    <img src="img/watch_,many.jpg" alt="Pulsometr" class="catalog-item_img">
+                    <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                    <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                    <a href="" class="catalog-item__link">ПОДРОБНЕЕ </a>
+                    <hr>
+
+                    <div class="catalog-item__footer"><!-- обертка для кнопки и суммы -->
+                        <div class="catalog-item__prices">
+
+                        </div>
+                        <button class="catalog-item__btn"></button>
+                    </div>
+
+                </div>
+            </div> <!-- созадем 3 больших таба .catalog__contant*3 -->
+            <div class="catalog__contant"></div>
+            <div class="catalog__contant"></div>
+
+
         </div>
     </section>
 
